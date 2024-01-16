@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --green-color:#68A980;
+  --beach-color:#F1EAD1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;   
+  height: 100%;
+  width: 245px;
+  overflow: hidden;
+  transform: 0.5s;
+  background: var(--green-color);
+}
+
+.sidebar ul {
+	position: relative;
+	height: 100vh;
+}
+
+.sidebar ul li {
+	list-style: none;
+}
+
+.sidebar ul li:hover {
+	background: var(--beach-color);
+}
+
+.sidebar ul li a {
+	position: relative;
+	display: flex;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.sidebar ul li a .icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 60px;
+	height: 60px;
+	font-size: 1.5em;
+	color: var(--beach-color);
+}
+
+.sidebar ul li .text {
+	position: relative;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	font-size: 1em;
+	color: var(--beach-color);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* Logo */
+.sidebar ul li.logo {
+	margin-bottom: 50px;
+
+}
+
+.sidebar ul li.logo:hover {
+	background: var(--green-color);
+}
+
+.sidebar ul li.logo .icon {
+	font-size: 2em;
+}
+
+.sidebar ul li.logo .text {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+/* Logout */
+.logout {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* header */
+.header-content {
+	margin-left: 250px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 2);
+  background: var(--beach-color);
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.user-wrapper span {
+  color: #222;
+}
+
+/* Add Menu */
+.add-menu {
+	margin-top: 20px;
+  margin-left: 390px;
+  background: var(--beach-color);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 2);
+  border-radius: 8px;
+  padding: 20px;
+  width: 970px;
+ 
+}
+
+.add-menu-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+
+/* Table Menu */
+.table-container {
+  margin-left: 250px;
+  padding: 20px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+	box-shadow: 2px 2px 5px rgb(0, 0, 0, 2);
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--green-color);
+  color: #222;
+}

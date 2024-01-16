@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --green-color:#68A980;
+  --beach-color:#F1EAD1;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;   
+  height: 100%;
+  width: 245px;
+  overflow: hidden;
+  transform: 0.5s;
+  background: var(--green-color);
+}
+
+.sidebar ul {
+	position: relative;
+	height: 100vh;
+}
+
+.sidebar ul li {
+	list-style: none;
+}
+
+.sidebar ul li:hover {
+	background: var(--beach-color);
+}
+
+.sidebar ul li a {
+	position: relative;
+	display: flex;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.sidebar ul li a .icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 60px;
+	height: 60px;
+	font-size: 1.5em;
+	color: var(--beach-color);
+}
+
+.sidebar ul li .text {
+	position: relative;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	font-size: 1em;
+	color: var(--beach-color);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* Logo */
+.sidebar ul li.logo {
+	margin-bottom: 50px;
+
+}
+
+.sidebar ul li.logo:hover {
+	background: var(--green-color);
+}
+
+.sidebar ul li.logo .icon {
+	font-size: 2em;
+}
+
+.sidebar ul li.logo .text {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+/* Logout */
+.logout {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* header */
+.header-content {
+	margin-left: 250px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 2);
+  background: var(--beach-color);
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.user-wrapper span {
+  color: #222;
+}
+
+/* Box Card */
+.content {
+	margin-left: 250px;
+	position: relative;
+	min-height: 90vh;
+}
+
+.content .cards {
+	padding: 20px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.content .cards .card {
+	margin-right: 60px;
+	width: 250px;
+	height: 150px;
+	background: var(--green-color);
+	color: #fff;
+	margin: 20px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;	  
+	box-shadow: 2px 2px 5px rgb(0, 0, 0, 2);
+}
+
+.content .cards .card .box-icon {
+	width: 60px;
+	height: 60px;
+	font-size: 2.5rem;
+}
+
+.content .content-li {
+	min-height: 60vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
