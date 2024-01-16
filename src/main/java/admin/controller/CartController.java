@@ -54,6 +54,7 @@ public class CartController extends HttpServlet {
 //		c.setQuantity(Integer.parseInt(request.getParameter("quantity")));
 //		c.setTotalPrice(Double.parseDouble(request.getParameter("totalPrice")));
 		c.setMenuId(Integer.parseInt(request.getParameter("menuId")));
+		c.setMenuName(request.getParameter("menuName"));
 
 		dao.addCart(c); // invoke method addCart() in CartDAO
 

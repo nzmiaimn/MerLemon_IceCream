@@ -59,6 +59,7 @@
 								<c:out value="${m.menuName}" />
 							</h2>
 							<input type="hidden" name="menuId" value="${m.menuId}" />
+							<input type="hidden" name="menuName" value="${m.menuName}" />
 							<!-- Other details you want to display -->
 							<button type="submit" class="addCart">Add to Cart</button>
 
@@ -95,7 +96,7 @@
 									<input type="text" id="quantity" name="quantity">
 							</div>
 							<div class="delete">
-								<button class="x" onclick="deleteItem('${c.cartId}')">X</button>
+								<a href="/Merlemon_IceCream/DeleteCartController?id=${c.cartId}" ><button class="x">X</button></a>
 							</div>
 						</div>
 						

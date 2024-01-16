@@ -6,6 +6,15 @@ public class CartBean {
 	private int quantity;
 	private double totalPrice;
 	private int menuId;
+	private String menuName;
+
+	public String getMenuName() {
+		return menuName;
+	}
+
+	public void setMenuName(String menuName) {
+		this.menuName = menuName;
+	}
 
 	public int getCartId() {
 		return cartId;

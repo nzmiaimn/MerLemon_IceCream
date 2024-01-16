@@ -159,4 +159,14 @@
     <servlet-name>OrderController</servlet-name>
     <url-pattern>/OrderController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteCartController</display-name>
+    <servlet-name>DeleteCartController</servlet-name>
+    <servlet-class>admin.controller.DeleteCartController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCartController</servlet-name>
+    <url-pattern>/DeleteCartController</url-pattern>
+  </servlet-mapping>
 </web-app>

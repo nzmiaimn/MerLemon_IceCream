@@ -7,8 +7,8 @@ import java.sql.SQLException;
 public class ConnectionManager {
 	static Connection con;
 	private static final String DB_DRIVER= "com.mysql.jdbc.Driver"; // driver
-	private static final String DB_CONNECTION = "jdbc:mysql://localhost/merlemon_icecream"; //link connection
-//	private static final String DB_CONNECTION = "jdbc:mysql://localhost/merlemon"; //link  burn
+//	private static final String DB_CONNECTION = "jdbc:mysql://localhost/merlemon_icecream"; //link connection
+	private static final String DB_CONNECTION = "jdbc:mysql://localhost/merlemon"; //link  burn
 	private static final String DB_USER = "root";
 	private static final String DB_PASSWORD = "";
 
